@@ -1,0 +1,91 @@
+a {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(-45deg, #eee5b1, #c4a285, #f5b089, #fc8c7d);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  color: white;
+  margin: 20px 20px 20px 20px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 8px;
+}
+
+#nav1 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  font-size: 26px;
+  margin-top: -30px;
+}
+#nav1:hover {
+  color: black;
+}
+
+#nav2 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 100px;
+  font-size: 26px;
+  margin-top: -30px;
+}
+#nav2:hover {
+  color: black;
+}
+
+#nav3 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  padding: 100px;
+  font-size: 26px;
+  margin-top: -10px;
+}
+
+#nav3:hover {
+  color: black;
+}
+
+#nav4 {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 100px;
+  font-size: 26px;
+  margin-top: -10px;
+}
+
+#nav4:hover {
+  color: black;
+}
