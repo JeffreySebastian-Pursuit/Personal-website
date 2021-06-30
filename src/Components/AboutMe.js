@@ -1,8 +1,28 @@
+import { NavLink } from "react-router-dom";
+
 const AboutMe = () => {
   return (
     <div>
+      <nav>
+        <NavLink to="/" id="navlink">
+          Back
+        </NavLink>
+        <NavLink to="/home" id="navlink">
+          Home
+        </NavLink>
+        <NavLink to="/skills" id="navlink">
+          Skills
+        </NavLink>
+        <NavLink to="/contact" id="navlink">
+          Contact
+        </NavLink>
+      </nav>
       <div id="Photo-and-Heading">
-        <img src="https://media-exp1.licdn.com/dms/image/C4D03AQHmjj1I9EaR7Q/profile-displayphoto-shrink_800_800/0/1603469546218?e=1630540800&v=beta&t=OAg1AX2Xvz93AhG1c9WxxZpERirqhblUSoYIkHNM05Q" alt="Jeffrey Sebastian" id="MyPhoto" />
+        <img
+          src="https://media-exp1.licdn.com/dms/image/C4D03AQHmjj1I9EaR7Q/profile-displayphoto-shrink_800_800/0/1603469546218?e=1630540800&v=beta&t=OAg1AX2Xvz93AhG1c9WxxZpERirqhblUSoYIkHNM05Q"
+          alt="Jeffrey Sebastian"
+          id="MyPhoto"
+        />
         <h2 class="Aboutme-heading">About Me</h2>
       </div>
       <div id="AboutMe">

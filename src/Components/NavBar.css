@@ -1,4 +1,4 @@
-a {
+.nav {
   display: flex;
   align-items: center;
   background: linear-gradient(-45deg, #eee5b1, #c4a285, #f5b089, #fc8c7d);

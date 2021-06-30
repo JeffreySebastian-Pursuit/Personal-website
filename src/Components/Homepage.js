@@ -3,17 +3,17 @@ import { NavLink } from "react-router-dom";
 const Homepage = () => {
   return (
     <div>
-      <nav>
-        <NavLink to="/">
-          Home
+      <nav >
+        <NavLink to="/" id="navlink" >
+          Back
         </NavLink>
-        <NavLink to="/about">
+        <NavLink to="/about" id="navlink">
           About
         </NavLink>
-        <NavLink to="/skills" >
+        <NavLink to="/skills"  id="navlink">
           Skills
         </NavLink>
-        <NavLink to="/contact" >
+        <NavLink to="/contact"  id="navlink">
           Contact
         </NavLink>
       </nav>
