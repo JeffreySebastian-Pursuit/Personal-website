@@ -1,0 +1,107 @@
+#Images-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+  }
+  #Images-container img {
+    width: 300px;
+    transition: transform 1.5s;
+    margin-top: 20px;
+  }
+  
+  #Images-container img:hover {
+    transform: scale(2);
+  }
+  #Image {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  #text-adventure {
+    font-size: 18px;
+  }
+  #Snowman-text {
+    font-size: 18px;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    /* nav {
+      font-size: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly;
+      font-family: "Times New Roman", Times, serif;
+      border-bottom: solid black;
+    }
+    #AboutMe p {
+      font-size: 15px;
+      text-align: left;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    #MyPhoto {
+      margin-top: 20px;
+      height: 90px;
+      transition:1.5s;
+     }
+     #MyPhoto:hover{
+       transform: scale(1.5);
+     }
+     #Photo-and-Heading{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      margin-top: 50px;
+      gap: 30px;
+      }
+    #Images-container img {
+      width: 160px;
+      transition: transform 1.5s;
+      margin-top: 15px;
+    }
+    #Images-container img:hover {
+      transform: scale(1.9);
+    }
+    .Contact-Info {
+      padding: 10px;
+      width: 300px;
+    }
+    .Contact-Info p {
+      font-size: 15px;
+      text-align: center;
+    }
+    .Contact-Info p a {
+      font-size: 15px;
+      text-decoration: none;
+      font-weight: bold;
+      color:white;
+    }
+    .Contact-Info h1 {
+      text-align: center;
+      font-size: 25px;
+    }
+    .Contact-Info p a:hover {
+      color: purple;
+      font-size: 15px;
+    }
+    .Skills-Container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .Skills-Container img {
+      border-radius: 10px;
+      height: 50px;
+      width: 90px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+    } */
+    #text-adventure {
+      font-size: 15px;
+    }
+}

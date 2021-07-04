@@ -1,4 +1,4 @@
-import "./Homepage.css";
+import "../Styles/Homepage.css";
 import { NavLink } from "react-router-dom";
 const Homepage = () => {
   return (

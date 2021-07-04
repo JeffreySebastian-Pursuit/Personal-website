@@ -1,8 +1,9 @@
 .nav {
   display: flex;
   align-items: center;
-  background: linear-gradient(-45deg, #eee5b1, #c4a285, #f5b089, #fc8c7d);
+  background: linear-gradient(-45deg, #80a2ee, #71a5e6, #7bd6ec, #250331);
   background-size: 400% 400%;
+  opacity: 0.5;
   animation: gradient 15s ease infinite;
   color: white;
   margin: 20px 20px 20px 20px;
@@ -22,36 +23,36 @@
 
 nav {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 8px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5px;
 }
 
 #nav1 {
-  grid-column: 2/3;
-  grid-row: 2/3;
+  grid-column: 2;
+  grid-row: 1;
   display: flex;
   text-decoration: none;
   align-items: center;
   justify-content: center;
-  padding: 100px;
+  padding: 50px;
   font-size: 26px;
-  margin-top: -30px;
+  margin-top: 30px;
 }
 #nav1:hover {
   color: black;
 }
 
 #nav2 {
-  grid-column: 3/4;
-  grid-row: 2/3;
+  grid-column: 4;
+  grid-row: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  padding: 100px;
+  padding: 50px;
   font-size: 26px;
-  margin-top: -30px;
+  margin-top: 30px;
 }
 #nav2:hover {
   color: black;
@@ -59,15 +60,15 @@ nav {
 
 #nav3 {
   grid-column: 2/3;
-  grid-row: 3/4;
+  grid-row: 3;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   text-decoration: none;
-  padding: 100px;
+  padding: 50px;
   font-size: 26px;
-  margin-top: -10px;
+  margin-top: 10px;
 }
 
 #nav3:hover {
@@ -75,17 +76,30 @@ nav {
 }
 
 #nav4 {
-  grid-column: 3/4;
-  grid-row: 3/4;
+  grid-column: 4;
+  grid-row: 3;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  padding: 100px;
+  padding: 50px;
   font-size: 26px;
-  margin-top: -10px;
+  margin-top: 10px;
 }
 
 #nav4:hover {
   color: black;
+}
+
+#nav5 {
+    grid-column: 3;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    padding: 50px;
+    font-size: 26px;
+    margin-top: 10px;
 }
