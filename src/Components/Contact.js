@@ -1,22 +1,27 @@
 import { Link, NavLink } from "react-router-dom";
+import Darkmode from "./Darkmode";
 const Contact = () => {
   return (
     <div>
-      <nav>
-        <NavLink to="/" id="navlink">
-          Back
+      <nav id="nav" className="navbar navbar-expand-xl navbar-dark bg-dark">
+        <NavLink to="/" id="navlink" className="nav-link active">
+          Exit
         </NavLink>
-        <NavLink to="/home" id="navlink">
+        <NavLink to="/home" id="navlink" className="nav-link active">
           Home
         </NavLink>
-        <NavLink to="/skills" id="navlink">
+        <NavLink to="/skills" id="navlink" className="nav-link active">
           Skills
         </NavLink>
-        <NavLink to="/contact" id="navlink">
+        <NavLink to="/contact" id="navlink" className="nav-link active">
           Contact
         </NavLink>
+        <NavLink to="/projects" id="navlink" className="nav-link active">
+          Projects
+        </NavLink>
+        <Darkmode />
       </nav>
-      <div class="Contact-Info">
+      <div className="Contact-Info">
         <h1>Contact Information</h1>
         <p id="email">
           Feel free to send me an

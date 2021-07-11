@@ -1,4 +1,4 @@
-.nav {
+ .navLink{
   display: flex;
   align-items: center;
   background: linear-gradient(-45deg, #80a2ee, #71a5e6, #7bd6ec, #250331);
@@ -102,4 +102,9 @@ nav {
     padding: 50px;
     font-size: 26px;
     margin-top: 10px;
+}
+
+#button{
+  height: 30px;
+  width: 10px;
 }

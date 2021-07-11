@@ -1,5 +1,7 @@
 import "../Styles/Project.css";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import Darkmode from "./Darkmode";
 import Image1 from "../Images/text-adventurePart1.png";
 import Image2 from "../Images/text-adventurePart2.png";
 import Image3 from "../Images/text-adventurePart3.png";
@@ -13,7 +15,7 @@ import Snowman3 from "../Images/snowman-project-guessing-word.png";
 import Snowman4 from "../Images/snowman-project-game-over.png";
 import Snowman5 from "../Images/snowman-project-displayed-guessed-letters.png";
 
-const Project = () => {
+const Projects = () => {
   const [showText, setShowtext] = useState(true);
   const [secondButton, setSecondButton] = useState(true);
 
@@ -27,6 +29,24 @@ const Project = () => {
   };
   return (
     <div>
+      <nav id="nav" className="navbar navbar-expand-xl navbar-dark bg-dark">
+        <NavLink to="/" id="navlink" className="nav-link active">
+          Exit
+        </NavLink>
+        <NavLink to="/home" id="navlink" className="nav-link active">
+          Home
+        </NavLink>
+        <NavLink to="/skills" id="navlink" className="nav-link active">
+          Skills
+        </NavLink>
+        <NavLink to="/contact" id="navlink" className="nav-link active">
+          Contact
+        </NavLink>
+        <NavLink to="/projects" id="navlink" className="nav-link active">
+          Projects
+        </NavLink>
+        <Darkmode />
+      </nav>
       <div className="all">
         <h1 className="Project-Heading">Projects</h1>
         <h2 className="Text-adventure-heading">Text Adventure</h2>
@@ -113,4 +133,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default Projects;

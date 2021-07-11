@@ -35,9 +35,7 @@ const Darkmode = () => {
   };
 
   return (
-    <button
-      className={theme === "dark" ? clickedClass : ""}
-      id="darkMode"
+    <button  className="btn-outline-dark d-flex flex-row-reverse"
       onClick={(e) => switchTheme(e)}
     >
       {isDarkMode ? "Light Mode" : "Dark Mode"}

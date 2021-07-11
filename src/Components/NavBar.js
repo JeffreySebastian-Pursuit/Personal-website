@@ -1,25 +1,28 @@
 import { NavLink } from "react-router-dom";
-import "../Styles/NavBar.css"
-
+import "../Styles/NavBar.css";
+import Darkmode from "./Darkmode";
 const NavBar = () => {
   return (
-    <nav>
-      <NavLink to="/home" id="nav1" class="nav">
-        Home
-      </NavLink>
-      <NavLink to="/about" id="nav2" class="nav">
-        About
-      </NavLink>
-      <NavLink to="/skills" id="nav3" class="nav">
-        Skills
-      </NavLink>
-      <NavLink to="/contact" id="nav4" class="nav">
-        Contact
-      </NavLink>
-      <NavLink to="/project" id="nav5" class="nav">
-        Project
-      </NavLink>
-    </nav>
+    <div>
+        <Darkmode id="button"  className= "d-flex flex-row-reverse"/>
+      <nav>
+        <NavLink to="/home" id="nav1" className="navLink">
+          Home
+        </NavLink>
+        <NavLink to="/about" id="nav2" className="navLink">
+          About
+        </NavLink>
+        <NavLink to="/skills" id="nav3" className="navLink">
+          Skills
+        </NavLink>
+        <NavLink to="/contact" id="nav4" className="navLink">
+          Contact
+        </NavLink>
+        <NavLink to="/projects" id="nav5" className="navLink">
+          Projects
+        </NavLink>
+      </nav>
+    </div>
   );
 };
 
