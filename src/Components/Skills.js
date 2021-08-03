@@ -1,5 +1,3 @@
-import Darkmode from "./Darkmode";
-import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const Skills = ({ data }) => {
@@ -7,7 +5,7 @@ const Skills = ({ data }) => {
   const [skill, setSkill] = useState("");
   const [images, setImages] = useState([]);
   const [texts, setTexts] = useState([]);
-  const skills = ["Front-end", "Backend", "Project Management", "All"];
+  const skills = ["Front-end", "Backend", "All"];
 
   useEffect(() => {
     const fecthMyData = (e) => {
@@ -22,55 +20,50 @@ const Skills = ({ data }) => {
   }, [data]);
 
   const handleChange = (e) => {
-      setImages([]);
-      setTexts([]);
-      const target = e.target.value;
-      for (let i = 0; i < myData.length; i++) {
-          if (myData[i].name === target) {
-              setImages((prevImg) => [myData[i].image, ...prevImg]);
-              setTexts((prevText) => [myData[i].text, ...prevText]);
-            }
-        }
+    setImages([]);
+    setTexts([]);
+    const target = e.target.value;
+    for (let i = 0; i < myData.length; i++) {
+      if (myData[i].name === target) {
+        setImages((prevImg) => [myData[i].image, ...prevImg]);
+        console.log(images);
+        setTexts((prevText) => [myData[i].text, ...prevText]);
+      }
+    }
     setSkill(e.target.value);
   };
-
   const selectOption = skills.map((skill) => (
-    <option value={skill}>{skill}</option>
+    <option value={skill} key={skill}>
+      {skill}
+    </option>
   ));
-
   return (
     <div>
-      <nav id="nav" className="navbar navbar-expand-xl navbar-dark bg-dark">
-        <NavLink to="/" id="navlink" className="nav-link active">
-          Exit
-        </NavLink>
-        <NavLink to="/home" id="navlink" className="nav-link active">
-          Home
-        </NavLink>
-        <NavLink to="/skills" id="navlink" className="nav-link active">
-          Skills
-        </NavLink>
-        <NavLink to="/contact" id="navlink" className="nav-link active">
-          Contact
-        </NavLink>
-        <NavLink to="/projects" id="navlink" className="nav-link active">
-          Projects
-        </NavLink>
-        <Darkmode />
-      </nav>
-      <select value={skill} onChange={handleChange}>
-        <option value="" disabled selected>
-          {" "}
-          Select Skills
-        </option>
-        {selectOption}
-      </select>
-      <div>
-        {images.map((image) => {
-          return <img src={image} alt="skill" />;
-        })}
+      <div className="row mb-3">
+        <select
+          value={skill}
+          onChange={handleChange}
+          className="mt-5 col-sm-2 col-form-label mx-5"
+        >
+          <option value="" disabled selected>
+            {" "}
+            Select Skills
+          </option>
+          {selectOption}
+        </select>
+      </div>
+      <div className="d-flex">
         {texts.map((text) => {
-          return <h3>{text}</h3>;
+          return <p className="mx-5">{text}</p>;
+        })}
+      </div>
+      <div id="skillsImage">
+        {images.map((image, i) => {
+          return (
+            <div id="image">
+              <i className={image} key={i} />
+            </div>
+          );
         })}
       </div>
     </div>
@@ -78,3 +71,5 @@ const Skills = ({ data }) => {
 };
 
 export default Skills;
+
+// return <div id="image">{ image.isAnIcon ? <i> : <img> }</div>;

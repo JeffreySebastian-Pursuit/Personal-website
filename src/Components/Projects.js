@@ -1,7 +1,5 @@
 import "../Styles/Project.css";
-import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import Darkmode from "./Darkmode";
 import Image1 from "../Images/text-adventurePart1.png";
 import Image2 from "../Images/text-adventurePart2.png";
 import Image3 from "../Images/text-adventurePart3.png";
@@ -29,32 +27,19 @@ const Projects = () => {
   };
   return (
     <div>
-      <nav id="nav" className="navbar navbar-expand-xl navbar-dark bg-dark">
-        <NavLink to="/" id="navlink" className="nav-link active">
-          Exit
-        </NavLink>
-        <NavLink to="/home" id="navlink" className="nav-link active">
-          Home
-        </NavLink>
-        <NavLink to="/skills" id="navlink" className="nav-link active">
-          Skills
-        </NavLink>
-        <NavLink to="/contact" id="navlink" className="nav-link active">
-          Contact
-        </NavLink>
-        <NavLink to="/projects" id="navlink" className="nav-link active">
-          Projects
-        </NavLink>
-        <Darkmode />
-      </nav>
-      <div className="all">
-        <h1 className="Project-Heading">Projects</h1>
-        <h2 className="Text-adventure-heading">Text Adventure</h2>
-        <button type="button" id="show-text" onClick={handleClick}>
+      <div className="mx-5 mt-5">
+        <h1 className="mb-3">Projects</h1>
+        <h2 className="Text-adventure-heading mb-3">Text Adventure</h2>
+        <button
+          type="button"
+          id="show-text"
+          className="mb-3 btn btn-secondary"
+          onClick={handleClick}
+        >
           {showText ? "Hide" : "Show"}
         </button>
         {showText ? (
-          <div id="text-adventure">
+          <div className="text">
             <p>
               Text Adventure is an adventure game where a user must go on a
               quest to save the princess and a user will get three attempts on
@@ -77,7 +62,7 @@ const Projects = () => {
             </ul>
             <br />
             <h4 id="Image">Images</h4>
-            <div id="Images-container">
+            <div id="text-adventure">
               <img src={Image1} alt="textAdventure" />
               <img src={Image2} alt="textAdventure" />
               <img src={Image3} alt="textAdventure" />
@@ -91,11 +76,16 @@ const Projects = () => {
 
         <br />
         <h2>Snowman</h2>
-        <button type="button" onClick={handleSecondButton} id="showBtn">
+        <button
+          type="button"
+          onClick={handleSecondButton}
+          id="showBtn"
+          className="mb-3 btn btn-secondary"
+        >
           {secondButton ? "Hide" : "Show"}
         </button>
         {secondButton ? (
-          <div id="Snowman-text">
+          <div className="text">
             <p>
               Snowman is a word-guessing game, where a user must guess the
               secret word, but when a player guesses a letter that isn’t part of
@@ -119,7 +109,7 @@ const Projects = () => {
             </ul>
             <br />
             <h4 id="Image">Images</h4>
-            <div id="Images-container">
+            <div id="snowman">
               <img src={Snowman1} alt="Snowman" />
               <img src={Snowman2} alt="Snowman" />
               <img src={Snowman3} alt="Snowman" />

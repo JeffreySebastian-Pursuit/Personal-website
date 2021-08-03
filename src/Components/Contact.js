@@ -1,52 +1,45 @@
-import { Link, NavLink } from "react-router-dom";
-import Darkmode from "./Darkmode";
+
 const Contact = () => {
   return (
     <div>
-      <nav id="nav" className="navbar navbar-expand-xl navbar-dark bg-dark">
-        <NavLink to="/" id="navlink" className="nav-link active">
-          Exit
-        </NavLink>
-        <NavLink to="/home" id="navlink" className="nav-link active">
-          Home
-        </NavLink>
-        <NavLink to="/skills" id="navlink" className="nav-link active">
-          Skills
-        </NavLink>
-        <NavLink to="/contact" id="navlink" className="nav-link active">
-          Contact
-        </NavLink>
-        <NavLink to="/projects" id="navlink" className="nav-link active">
-          Projects
-        </NavLink>
-        <Darkmode />
-      </nav>
-      <div className="Contact-Info">
-        <h1>Contact Information</h1>
-        <p id="email">
-          Feel free to send me an
-          <a href="mailto:jeffreysebastian@pursuit.org">email</a>!
-        </p>
-        <p id="github">
-          You can also check my
-          <Link
-            href="https://github.com/JeffreySebastian-Pursuit?tab=repositories"
-            target="_blank"
-          >
-            GitHub
-          </Link>
-          .
-        </p>
-        <p id="linkedin">
-          I also invite you to connect with me on
-          <Link
-            href="https://www.linkedin.com/in/jeffrey-sebastian/"
-            target="_blank"
-          >
-            LinkedIn
-          </Link>
-          .
-        </p>
+      <div className="mx-5 mt-5">
+        <h1 className="card-header">Contact Information</h1>
+        <div className="card-body">
+          <p className="card-text">
+            Feel free to send me an
+            <a
+              className="alert-link text-primary"
+              href="mailto:jeffreysebastian@pursuit.org"
+            >
+              {" "}
+              email!
+            </a>
+          </p>
+          <p className="card-text">
+            You can also check my
+            <a
+              className="alert-link text-primary"
+              href="https://github.com/JeffreySebastian-Pursuit?tab=repositories"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              GitHub.
+            </a>
+          </p>
+          <p className="card-text">
+            I also invite you to connect with me on
+            <a
+              className="alert-link text-primary"
+              href="https://www.linkedin.com/in/jeffrey-sebastian/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              LinkedIn.
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   );
