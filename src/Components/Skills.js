@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import '../Styles/Skills.css'
+import "../Styles/Skills.css";
 
 const Skills = ({ data }) => {
   const [myData, setMyData] = useState([]);
@@ -32,36 +32,36 @@ const Skills = ({ data }) => {
     }
     setSkill(e.target.value);
   };
-  const selectOption = skills.map((skill) => (
-    <option value={skill} key={skill}>
+  const selectOption = skills.map((skill, i) => (
+    <option value={skill} key={i}>
       {skill}
     </option>
   ));
   return (
     <div>
       <div className="row mb-3">
-        <select
-          value={skill}
-          onChange={handleChange}
-          className="select"
-        >
-          <option value="" disabled selected>
+        <select value={skill} onChange={handleChange} className="select">
+          <option value="">
             {" "}
             Select Skills
           </option>
           {selectOption}
         </select>
       </div>
-      <div className="text" >
-        {texts.map((text) => {
-          return <p>{text}</p>;
+      <div className="text">
+        {texts.map((text, i) => {
+          return (
+            <div key={i}>
+              <p >{text}</p>
+            </div>
+          );
         })}
       </div>
       <div className="images">
         {images.map((image, i) => {
           return (
-            <div id="image">
-              <i className={image} key={i} />
+            <div id="image" key={i}>
+              <i className={image} />
             </div>
           );
         })}
