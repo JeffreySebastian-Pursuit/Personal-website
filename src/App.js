@@ -7,15 +7,14 @@ import Contact from "./Components/Contact";
 import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
 import Data from "./Data/Data";
+import FourOFour from "./Components/Four0Four";
 
 function App() {
   return (
     <div className="App">
       <Router>
-            <NavBar />
+        <NavBar />
         <Switch>
-          <Route exact path="/">
-          </Route>
           <Route exact path="/home">
             <Homepage />
           </Route>
@@ -29,7 +28,10 @@ function App() {
             <Projects />
           </Route>
           <Route exact path="/Skills">
-            <Skills data={Data}/>
+            <Skills data={Data} />
+          </Route>
+          <Route path="*">
+            <FourOFour />
           </Route>
         </Switch>
       </Router>
