@@ -11,11 +11,6 @@ const Data = [
   },
   {
     name: "Front-end",
-    image: "devicon-css3-plain",
-    text: "CSS",
-  },
-  {
-    name: "Front-end",
     image: "devicon-javascript-plain",
     text: "JavaScript",
   },

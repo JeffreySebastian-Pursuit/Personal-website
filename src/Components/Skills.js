@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import '../Styles/Skills.css'
 
 const Skills = ({ data }) => {
   const [myData, setMyData] = useState([]);
@@ -26,7 +27,6 @@ const Skills = ({ data }) => {
     for (let i = 0; i < myData.length; i++) {
       if (myData[i].name === target) {
         setImages((prevImg) => [myData[i].image, ...prevImg]);
-        console.log(images);
         setTexts((prevText) => [myData[i].text, ...prevText]);
       }
     }
@@ -43,7 +43,7 @@ const Skills = ({ data }) => {
         <select
           value={skill}
           onChange={handleChange}
-          className="mt-5 col-sm-2 col-form-label mx-5"
+          className="select"
         >
           <option value="" disabled selected>
             {" "}
@@ -52,12 +52,12 @@ const Skills = ({ data }) => {
           {selectOption}
         </select>
       </div>
-      <div className="d-flex">
+      <div className="text" >
         {texts.map((text) => {
-          return <p className="mx-5">{text}</p>;
+          return <p>{text}</p>;
         })}
       </div>
-      <div id="skillsImage">
+      <div className="images">
         {images.map((image, i) => {
           return (
             <div id="image">

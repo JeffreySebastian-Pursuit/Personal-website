@@ -5,14 +5,13 @@ const AboutMe = () => {
     <div>
       <div className="aboutMe">
         <img
-          className="img-responsive w-25 p-3 mx-5 mt-5"
           src="https://media-exp1.licdn.com/dms/image/C4D03AQHmjj1I9EaR7Q/profile-displayphoto-shrink_800_800/0/1603469546218?e=1630540800&v=beta&t=OAg1AX2Xvz93AhG1c9WxxZpERirqhblUSoYIkHNM05Q"
           alt="Jeffrey Sebastian"
           id="MyPhoto"
         />
         <div>
           <div id="AboutMe">
-            <h2 className="text-center mt-5">About Me</h2>
+            <h2 className="h2">About Me</h2>
           </div>
           <div>
             <p id="about">

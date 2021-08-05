@@ -6,7 +6,6 @@ import Image3 from "../Images/text-adventurePart3.png";
 import Image4 from "../Images/text-adventurePart4.png";
 import Image5 from "../Images/text-adventurePart5.png";
 import Image6 from "../Images/text-adventurePart6.png";
-import Image7 from "../Images/text-adventurePart7.png";
 import Snowman1 from "../Images/snowmanProjectStart.png";
 import Snowman2 from "../Images/snowmanProjectPreview.png";
 import Snowman3 from "../Images/snowman-project-guessing-word.png";
@@ -69,7 +68,6 @@ const Projects = () => {
               <img src={Image4} alt="textAdventure" />
               <img src={Image5} alt="textAdventure" />
               <img src={Image6} alt="textAdventure" />
-              <img src={Image7} alt="textAdventure" />
             </div>
           </div>
         ) : null}
