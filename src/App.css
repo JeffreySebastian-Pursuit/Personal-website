@@ -1,12 +1,23 @@
-body.light{
+html.main.light{
   background: linear-gradient(-45deg, #04daf7, #a1cdd4, #03f7ba, white);
-  background-size:1000% 1000%;
+  background-size: 2000% 2000%;
+  animation: gradient 15s ease infinite;
+  color: black;
+}
+
+
+
+
+
+body.light {
+  background: linear-gradient(-45deg, #04daf7, #a1cdd4, #03f7ba, white);
+  background-size: 1000% 1000%;
   animation: gradient 15s ease infinite;
   color: black;
 }
 body.dark {
   background: linear-gradient(-45deg, #151b1b, #261e27, #0a2022, #02121f);
-  background-size:1000% 1000%;
+  background-size: 1000% 1000%;
   animation: gradient 15s ease infinite;
   color: rgb(246, 242, 242);
 }
@@ -21,25 +32,21 @@ body.dark {
     background-position: 0% 50%;
   }
 }
-a{
+a {
   text-decoration: none;
 }
 
-
-
 @media screen and (min-width: 1024px) {
-
-  body.light{
+  body.light {
     background: linear-gradient(-45deg, #04daf7, #a1cdd4, #03f7ba, white);
-    background-size:2000% 2000%;
+    background-size: 2000% 2000%;
     animation: gradient 15s ease infinite;
     color: black;
   }
   body.dark {
     background: linear-gradient(-45deg, #151b1b, #261e27, #0a2022, #02121f);
-    background-size:2000% 2000%;
+    background-size: 2000% 2000%;
     animation: gradient 15s ease infinite;
     color: rgb(246, 242, 242);
   }
-
 }
