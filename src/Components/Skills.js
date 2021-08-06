@@ -48,7 +48,7 @@ const Skills = ({ data }) => {
           {selectOption}
         </select>
       </div>
-      <div className="text">
+      <div className="Skills">
         {texts.map((text, i) => {
           return (
             <div key={i}>
@@ -60,7 +60,7 @@ const Skills = ({ data }) => {
       <div className="images">
         {images.map((image, i) => {
           return (
-            <div id="image" key={i}>
+            <div key={i}>
               <i className={image} />
             </div>
           );

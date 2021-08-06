@@ -17,11 +17,9 @@ const Projects = () => {
   const [secondButton, setSecondButton] = useState(true);
 
   const handleClick = () => {
-    debugger;
     setShowtext(!showText);
   };
   const handleSecondButton = () => {
-    debugger;
     setSecondButton(!secondButton);
   };
   return (
@@ -31,8 +29,7 @@ const Projects = () => {
         <h2 className="Text-adventure-heading mb-3">Text Adventure</h2>
         <button
           type="button"
-          id="show-text"
-          className="mb-3 btn btn-secondary"
+          className="mb-1 btn btn-secondary"
           onClick={handleClick}
         >
           {showText ? "Hide" : "Show"}
@@ -44,7 +41,7 @@ const Projects = () => {
               quest to save the princess and a user will get three attempts on
               each question from the enemy.
             </p>
-            <ul>
+            <ul className="lists">
               <li>Developed Text Adventure game using JavaScript</li>
               <li>Designed the workflow of the project</li>
               <li>
@@ -77,8 +74,7 @@ const Projects = () => {
         <button
           type="button"
           onClick={handleSecondButton}
-          id="showBtn"
-          className="mb-3 btn btn-secondary"
+          className="mb-1 btn btn-secondary"
         >
           {secondButton ? "Hide" : "Show"}
         </button>
@@ -89,7 +85,7 @@ const Projects = () => {
               secret word, but when a player guesses a letter that isn’t part of
               the word a player loses a life or chances to guess the word
             </p>
-            <ul>
+            <ul className="lists">
               <li>Developed Snowman game using JavaScript</li>
               <li>
                 Created a word that will be generated on the game that will be

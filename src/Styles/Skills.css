@@ -2,7 +2,7 @@
     width: 150px;
     margin: 60px;
 }
-.text{
+.Skills{
     display: flex;
     justify-content: center;
 }
@@ -29,7 +29,7 @@ i{
         width: 150px;
         margin: 30px;
     }
-    .text{
+    .Skills{
         display: flex;
         justify-content:flex-start;
         flex-wrap: wrap;
@@ -87,7 +87,7 @@ i{
         width: 150px;
         margin: 30px;
     }
-    .text{
+    .Skills{
         display: flex;
         justify-content:flex-start;
         flex-wrap: wrap;
