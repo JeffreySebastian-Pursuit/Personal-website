@@ -5,7 +5,11 @@ const NavBar = () => {
   return (
     <div>
       <nav className="d-flex justify-content-around navbar navbar-expand-xl bg-dark">
-        <NavLink to="/" id="nav" className="text-white d-flex align-items-center" >
+        <NavLink
+          to="/"
+          id="nav"
+          className="text-white d-flex align-items-center"
+        >
           Home
         </NavLink>
         <NavLink to="/about" id="nav" className="text-white">

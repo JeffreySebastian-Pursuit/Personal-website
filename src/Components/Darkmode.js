@@ -1,15 +1,12 @@
 import { useState } from "react";
 
-
 const Darkmode = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
-
   let clickedClass = "clicked";
   const body = document.body;
   const lightTheme = "light";
   const darkTheme = "dark";
   let theme;
-
   if (localStorage) {
     theme = localStorage.getItem("theme");
   }
@@ -35,9 +32,7 @@ const Darkmode = () => {
   };
 
   return (
-    <button  id="button"
-      onClick={(e) => switchTheme(e)}
-    >
+    <button id="button" onClick={(e) => switchTheme(e)}>
       {isDarkMode ? "Light Mode" : "Dark Mode"}
     </button>
   );

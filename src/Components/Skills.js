@@ -41,10 +41,7 @@ const Skills = ({ data }) => {
     <div>
       <div className="row mb-3">
         <select value={skill} onChange={handleChange} className="select">
-          <option value="">
-            {" "}
-            Select Skills
-          </option>
+          <option value=""> Select Skills</option>
           {selectOption}
         </select>
       </div>
@@ -52,7 +49,7 @@ const Skills = ({ data }) => {
         {texts.map((text, i) => {
           return (
             <div key={i}>
-              <p >{text}</p>
+              <p>{text}</p>
             </div>
           );
         })}
@@ -71,5 +68,3 @@ const Skills = ({ data }) => {
 };
 
 export default Skills;
-
-// return <div id="image">{ image.isAnIcon ? <i> : <img> }</div>;
