@@ -1,8 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Homepage from "./Components/Homepage";
 import NavBar from "./Components/NavBar";
-import AboutMe from "./Components/AboutMe";
+import Home from "./Components/Home";
 import Contact from "./Components/Contact";
 import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
@@ -16,10 +15,7 @@ function App() {
         <NavBar />
         <Switch>
           <Route exact path="/" className="main">
-            <Homepage />
-          </Route>
-          <Route exact path="/about">
-            <AboutMe />
+            <Home />
           </Route>
           <Route exact path="/contact">
             <Contact />

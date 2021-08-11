@@ -33,7 +33,7 @@ const Darkmode = () => {
 
   return (
     <button id="button" onClick={(e) => switchTheme(e)}>
-      {isDarkMode ? "Light Mode" : "Dark Mode"}
+      {isDarkMode ? "🌞" : "🌙"}
     </button>
   );
 };

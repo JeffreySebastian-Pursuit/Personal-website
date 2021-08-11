@@ -29,17 +29,16 @@ const Projects = () => {
         <h2 className="Text-adventure-heading mb-3">Text Adventure</h2>
         <button
           type="button"
-          className="mb-1 btn btn-secondary"
+          className="mb-1 btn btn-secondary mb-5"
           onClick={handleClick}
         >
           {showText ? "Hide" : "Show"}
         </button>
         {showText ? (
-          <div className="text">
-            <p>
-              Text Adventure is an adventure game where a user must go on a
-              quest to save the princess and a user will get three attempts on
-              each question from the enemy.
+          <div>
+            <p className="text">
+              Text Adventure is an adventure game in which users rescue a
+              princess via a sequence of interactive questions.
             </p>
             <ul className="lists">
               <li>Developed Text Adventure game using JavaScript</li>
@@ -74,16 +73,15 @@ const Projects = () => {
         <button
           type="button"
           onClick={handleSecondButton}
-          className="mb-1 btn btn-secondary"
+          className="mb-1 btn btn-secondary mb-5"
         >
           {secondButton ? "Hide" : "Show"}
         </button>
         {secondButton ? (
-          <div className="text">
-            <p>
-              Snowman is a word-guessing game, where a user must guess the
-              secret word, but when a player guesses a letter that isn’t part of
-              the word a player loses a life or chances to guess the word
+          <div>
+            <p className="text">
+              Snowman is a word-guessing game in which the user loses a life or
+              chances to guess the word if they make a mistake.
             </p>
             <ul className="lists">
               <li>Developed Snowman game using JavaScript</li>

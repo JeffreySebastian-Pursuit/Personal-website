@@ -6,6 +6,7 @@ const Skills = ({ data }) => {
   const [skill, setSkill] = useState("");
   const [images, setImages] = useState([]);
   const [texts, setTexts] = useState([]);
+  const [showText, setShowText] = useState(false);
   const skills = ["Front-end", "Backend", "All"];
 
   useEffect(() => {
@@ -20,6 +21,9 @@ const Skills = ({ data }) => {
     fecthMyData();
   }, [data]);
 
+  const toggle = () => {
+    setShowText(!showText);
+  };
   const handleChange = (e) => {
     setImages([]);
     setTexts([]);
@@ -40,28 +44,39 @@ const Skills = ({ data }) => {
   return (
     <div>
       <div className="row mb-3">
-        <select value={skill} onChange={handleChange} className="select">
-          <option value=""> Select Skills</option>
-          {selectOption}
-        </select>
+        <h1 className="mt-5">Skills</h1>
+        <p id="category">
+          Choose a category:
+          <select value={skill} onChange={handleChange} className="select">
+            <option value=""> Select Skills</option>
+            {selectOption}
+          </select>
+        </p>
       </div>
-      <div className="Skills">
-        {texts.map((text, i) => {
-          return (
-            <div key={i}>
-              <p>{text}</p>
-            </div>
-          );
-        })}
-      </div>
+
       <div className="images">
         {images.map((image, i) => {
           return (
             <div key={i}>
-              <i className={image} />
+              <i
+                className={image}
+                onMouseLeave={toggle}
+                onMouseEnter={toggle}
+              />
             </div>
           );
         })}
+      </div>
+      <div className="Skills">
+        {showText
+          ? texts.map((text, i) => {
+              return (
+                <div key={i}>
+                  <p>{text}</p>
+                </div>
+              );
+            })
+          : null}
       </div>
     </div>
   );

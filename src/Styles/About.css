@@ -11,17 +11,20 @@
 }
 
 div #about {
+  margin-top: 40px;
   text-indent: 50px;
+  text-align: left;
+  margin-bottom: 50px;
 }
 a i {
   font-size: 100px;
-  margin: 70px 80px;
 }
 
 #MyPhoto {
   width: 200px;
   height: 200px;
-  margin: 50px 70px;
+  margin-top: 200px;
+  
 }
 
 @media screen and (max-width: 569px) {
@@ -44,10 +47,6 @@ a i {
   div #about {
     text-indent: 20px;
     margin-left: 30px;
-  }
-  a i {
-    font-size: 50px;
-    margin-left: 80px;
   }
 }
 
@@ -73,16 +72,12 @@ a i {
     margin-left: 15px;
     margin-right: 30px;
   }
-  a i {
-    font-size: 50px;
-    margin: 80px 50px;
-  }
 }
 
 @media only screen and (min-width: 1024px) {
   #MyPhoto {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     margin-left: 130px;
     margin-right: 30px;
   }
@@ -103,7 +98,8 @@ a i {
     font-size: 20px;
   }
   a i {
-    font-size: 50px;
-    margin-left: 90px;
+    font-size: 70px;
+    margin-left: 500px;
+
   }
 }

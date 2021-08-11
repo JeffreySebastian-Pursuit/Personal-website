@@ -22,7 +22,9 @@
 }
 .text {
   margin-top: -30px;
-  font-size: 20px;
+  font-size: 22px;
+  text-align: left;
+  margin-bottom: 30px;
 }
 
 #snowman {
@@ -58,6 +60,7 @@
   }
 }
 
+
 @media only screen and (max-width: 700px) {
   #text-adventure img {
     width: 200px;
@@ -82,7 +85,7 @@
     transform: scale(1.1);
     opacity: 1;
   }
-
+  
   #text-adventure {
     font-size: 25px;
   }
@@ -124,7 +127,7 @@
     width: 200px;
     transition: transform 1.5s;
     margin-top: 20px;
-    margin-left: -10px;
+    margin-left:-10px;
     opacity: 0.5;
   }
   #snowman img {
@@ -135,4 +138,7 @@
     margin-left: -10px;
     opacity: 0.5;
   }
+
+
+
 }

@@ -1,5 +1,4 @@
 import "../Styles/About.css";
-
 const AboutMe = () => {
   return (
     <div>
@@ -11,20 +10,21 @@ const AboutMe = () => {
         />
         <div>
           <div id="AboutMe">
-            <h2 className="h2">About Me</h2>
+            <h1 className="h2">Welcome to my page!</h1>
           </div>
           <div>
             <p id="about">
-              I am a Full Stack Developer at Pursuit, fascinated by creating an
-              application that would benefit other people in different
-              countries. Back home in the Philippines, people are struggling
-              with pursuing their education due to a lack of resources.
-              Therefore, I decided to pursue Software Engineering to help the
-              less fortunate get jump-started on their careers. Through Pursuit,
-              I gained my skills includes HTML, CSS, Javascript, Node, Express,
-              React/Redux, PostgreSQL, Sprints, Agile, Code Reviews, and Pair
-              Programming. Pursuit, an intensive 12 - month software engineering
-              fellowship with a 9% acceptance rate.
+              My name is Jeffrey Sebastian, I am a Full Stack Developer at
+              Pursuit, fascinated by creating an application that would benefit
+              other people in different countries. Back home in the Philippines,
+              people are struggling with pursuing their education due to a lack
+              of resources. Therefore, I decided to pursue Software Engineering
+              to help the less fortunate get jump-started on their careers.
+              Through Pursuit, I gained my skills includes HTML, CSS,
+              Javascript, Node, Express, React/Redux, PostgreSQL, Sprints,
+              Agile, Code Reviews, and Pair Programming. Pursuit, an intensive
+              12 - month software engineering fellowship with a 9% acceptance
+              rate.
             </p>
             <p id="about">
               Apart from my career as a Full Stack Developer, I am an
@@ -40,10 +40,18 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-      <a href="https://github.com/JeffreySebastian-Pursuit">
+      <a
+        href="https://github.com/JeffreySebastian-Pursuit"
+        target="_blank"
+        rel="noreferrer"
+      >
         <i class="devicon-github-original"></i>
       </a>
-      <a href="https://www.linkedin.com/in/jeffrey-sebastian/">
+      <a
+        href="https://www.linkedin.com/in/jeffrey-sebastian/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <i class="devicon-linkedin-plain"></i>
       </a>
     </div>

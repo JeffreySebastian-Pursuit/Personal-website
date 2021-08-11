@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+body {
+  font-family: "Overlock", cursive;
+}
+h1 {
+  font-family:'Times New Roman', Times, serif;
+}
+.card-text{
+  font-size: 30px;
+  text-align: left;
+}
+#button{
+  background-color: transparent;
+  border: white;
+}
 body.light {
   background: linear-gradient(-45deg, #04daf7, #a1cdd4, #03f7ba, white);
   background-size: 1000% 1000%;

@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <div>
       <div className="mx-5 mt-5">
-        <h1 className="card-header">Contact Information</h1>
+        <h1 className="card-header mb-5">Contact Information</h1>
         <div className="card-body">
           <p className="card-text">
             Feel free to send me an
