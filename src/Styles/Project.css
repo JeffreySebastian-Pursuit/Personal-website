@@ -1,3 +1,12 @@
+.text {
+  margin-top: -30px;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+.lists {
+  margin-top: -30px;
+  margin-left: 35px;
+}
 #text-adventure {
   display: flex;
   flex-direction: column;
@@ -20,12 +29,6 @@
   font-weight: bold;
   text-align: center;
 }
-.text {
-  margin-top: -30px;
-  font-size: 22px;
-  text-align: left;
-  margin-bottom: 30px;
-}
 
 #snowman {
   display: flex;
@@ -40,6 +43,7 @@
   transition: transform 1.5s;
   margin-top: 20px;
   opacity: 0.5;
+  margin-bottom: 30px;
 }
 
 #snowman img:hover {
@@ -47,26 +51,21 @@
   opacity: 1;
 }
 
-.lists {
-  margin-top: -30px;
-  margin-left: 35px;
-}
-@media only screen and (max-width: 375px) {
-  #Image {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: -10px;
+@media only screen and (max-width: 280px) {
+  .text {
+    margin-top: -30px;
+    font-size: 15px;
+    margin-bottom: 30px;
   }
-}
-
-
-@media only screen and (max-width: 700px) {
+  .lists {
+    margin-top: -10px;
+    margin-left: -10px;
+    font-size: 10px;
+  }
   #text-adventure img {
     width: 200px;
     transition: transform 1.5s;
     margin-top: 20px;
-    margin-left: -30px;
     opacity: 0.5;
   }
   #text-adventure img:hover {
@@ -74,71 +73,257 @@
     opacity: 1;
   }
   #snowman img {
-    width: 190px;
-    height: 80px;
+    width: 160px;
+    height: 100px;
     transition: transform 1.5s;
     margin-top: 20px;
-    margin-left: -30px;
     opacity: 0.5;
+    margin-bottom: 20px;
   }
   #snowman img:hover {
-    transform: scale(1.1);
+    transform: scale(1.4);
     opacity: 1;
   }
-  
-  #text-adventure {
+  #Image {
     font-size: 25px;
+    font-weight: bold;
+    margin-top: -20px;
+    text-align: center;
   }
+}
+
+@media only screen and (max-width: 320px) and (min-width: 281px) {
   .text {
-    margin-top: 0;
-    font-size: 12px;
+    margin-top: -30px;
+    font-size: 15px;
+    margin-bottom: 30px;
   }
   .lists {
-    margin-top: 0;
-    margin-left: 10px;
-  }
-}
-
-@media only screen and (max-width: 720px) {
-  #Image {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
     margin-top: -10px;
+    margin-left: -10px;
+    font-size: 10px;
   }
   #text-adventure img {
     width: 200px;
     transition: transform 1.5s;
     margin-top: 20px;
-    margin-left: 20px;
     opacity: 0.5;
   }
+  #text-adventure img:hover {
+    transform: scale(1.3);
+    opacity: 1;
+  }
   #snowman img {
-    width: 190px;
-    height: 80px;
+    width: 160px;
+    height: 100px;
     transition: transform 1.5s;
     margin-top: 20px;
-    margin-left: 30px;
     opacity: 0.5;
+    margin-bottom: 20px;
+  }
+  #snowman img:hover {
+    transform: scale(1.4);
+    opacity: 1;
   }
 }
-@media only screen and (max-width: 280px) {
+
+@media only screen and (max-width: 360px) and (min-width: 321px) {
+  .text {
+    margin-top: -30px;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .lists {
+    margin-top: -10px;
+    margin-left: -10px;
+    font-size: 10px;
+  }
   #text-adventure img {
     width: 200px;
     transition: transform 1.5s;
     margin-top: 20px;
-    margin-left:-10px;
     opacity: 0.5;
+  }
+  #text-adventure img:hover {
+    transform: scale(1.3);
+    opacity: 1;
   }
   #snowman img {
-    width: 190px;
-    height: 80px;
+    width: 160px;
+    height: 100px;
     transition: transform 1.5s;
     margin-top: 20px;
+    opacity: 0.5;
+    margin-bottom: 20px;
+  }
+  #snowman img:hover {
+    transform: scale(1.4);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 375px) and (min-width: 361px) {
+  .text {
+    margin-top: -30px;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .lists {
+    margin-top: -20px;
     margin-left: -10px;
+    font-size: 10px;
+  }
+  #text-adventure img {
+    width: 200px;
+    transition: transform 1.5s;
+    margin-top: 20px;
     opacity: 0.5;
   }
+  #text-adventure img:hover {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+  #snowman img {
+    width: 160px;
+    height: 100px;
+    transition: transform 1.5s;
+    margin-top: 20px;
+    opacity: 0.5;
+    margin-bottom: 20px;
+  }
+  #snowman img:hover {
+    transform: scale(1.4);
+    opacity: 1;
+  }
+  #Image {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -20px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 411px) and (min-width: 376px) {
+  .text {
+    margin-top: -30px;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .lists {
+    margin-top: -20px;
+    margin-left: -10px;
+    font-size: 10px;
+  }
+  #text-adventure img {
+    width: 200px;
+    transition: transform 1.5s;
+    margin-top: 20px;
+    opacity: 0.5;
+  }
+  #text-adventure img:hover {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+  #snowman img {
+    width: 160px;
+    height: 100px;
+    transition: transform 1.5s;
+    margin-top: 20px;
+    opacity: 0.5;
+    margin-bottom: 20px;
+  }
+  #snowman img:hover {
+    transform: scale(1.4);
+    opacity: 1;
+  }
+  #Image {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -20px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 414px) and (min-width: 412px) {
+  .text {
+    margin-top: -30px;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .lists {
+    margin-top: -20px;
+    margin-left: -10px;
+    font-size: 10px;
+  }
+  #text-adventure img {
+    width: 200px;
+    transition: transform 1.5s;
+    margin-top: 20px;
+    opacity: 0.5;
+  }
+  #text-adventure img:hover {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+  #snowman img {
+    width: 160px;
+    height: 100px;
+    transition: transform 1.5s;
+    margin-top: 20px;
+    opacity: 0.5;
+    margin-bottom: 20px;
+  }
+  #snowman img:hover {
+    transform: scale(1.4);
+    opacity: 1;
+  }
+  #Image {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -20px;
+    text-align: center;
+  }
+}
 
 
+@media only screen and (max-width: 540px) and (min-width: 415px) {
+  .text {
+    margin-top: -30px;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .lists {
+    margin-top: -20px;
+    margin-left: -10px;
+    font-size: 10px;
+  }
+  #text-adventure img {
+    width: 200px;
+    transition: transform 1.5s;
+    margin-top: 20px;
+    opacity: 0.5;
+  }
+  #text-adventure img:hover {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+  #snowman img {
+    width: 160px;
+    height: 100px;
+    transition: transform 1.5s;
+    margin-top: 20px;
+    opacity: 0.5;
+    margin-bottom: 20px;
+  }
+  #snowman img:hover {
+    transform: scale(1.4);
+    opacity: 1;
+  }
+  #Image {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -20px;
+    text-align: center;
+  }
 
 }
