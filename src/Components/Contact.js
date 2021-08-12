@@ -11,7 +11,7 @@ const Contact = () => {
               href="mailto:jeffreysebastian@pursuit.org"
             >
               {" "}
-              email!
+              Email!
             </a>
           </p>
           <p className="card-text">

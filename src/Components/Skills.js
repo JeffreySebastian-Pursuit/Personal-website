@@ -43,10 +43,10 @@ const Skills = ({ data }) => {
   ));
   return (
     <div>
-      <div className="row mb-3">
+      <div>
         <h1 className="mt-5">Skills</h1>
         <p id="category">
-          Choose a category:
+          Choose a category: 
           <select value={skill} onChange={handleChange} className="select">
             <option value=""> Select Skills</option>
             {selectOption}
@@ -59,9 +59,11 @@ const Skills = ({ data }) => {
           return (
             <div key={i}>
               <i
+              id="skillsIcon"
                 className={image}
                 onMouseLeave={toggle}
                 onMouseEnter={toggle}
+                onClick={toggle}
               />
             </div>
           );
@@ -72,7 +74,7 @@ const Skills = ({ data }) => {
           ? texts.map((text, i) => {
               return (
                 <div key={i}>
-                  <p>{text}</p>
+                  <p className="skillText">{text}</p>
                 </div>
               );
             })

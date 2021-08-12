@@ -45,14 +45,14 @@ const AboutMe = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <i class="devicon-github-original"></i>
+        <i id="aboutIcon" className="devicon-github-original"></i>
       </a>
       <a
         href="https://www.linkedin.com/in/jeffrey-sebastian/"
         target="_blank"
         rel="noreferrer"
       >
-        <i class="devicon-linkedin-plain"></i>
+        <i id="aboutIcon" className="devicon-linkedin-plain"></i>
       </a>
     </div>
   );
