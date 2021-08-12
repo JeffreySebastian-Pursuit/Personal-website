@@ -6,9 +6,11 @@ h1 {
   font-family:'Times New Roman', Times, serif;
 }
 .card-text{
+  /* margin-top: -20px; */
   font-size: 30px;
   text-align: left;
 }
+
 #button{
   background-color: transparent;
   border: white;

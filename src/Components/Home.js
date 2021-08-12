@@ -1,4 +1,4 @@
-import "../Styles/About.css";
+import "../Styles/Home.css";
 const AboutMe = () => {
   return (
     <div>
@@ -15,7 +15,7 @@ const AboutMe = () => {
           <div>
             <p id="about">
               My name is Jeffrey Sebastian, I am a Full Stack Developer at
-              Pursuit, fascinated by creating an application that would benefit
+              Pursuit. I am fascinated by creating an application that would benefit
               other people in different countries. Back home in the Philippines,
               people are struggling with pursuing their education due to a lack
               of resources. Therefore, I decided to pursue Software Engineering
